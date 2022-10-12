@@ -9,6 +9,7 @@ function ticketParameters() {
   const priceForKm = 0.21;
   const totalPrice = userKm * priceForKm;
   const numberCarriage = Math.floor((Math.random() * 10) + 1);
+  const bookingCode = Math.floor(Math.random() * (Math.floor(1670) - Math.ceil(1520)) + Math.ceil(1520));
   let discount;
   let visualDiscount;
   
@@ -27,14 +28,13 @@ function ticketParameters() {
   document.getElementById("type-discount").innerHTML = visualDiscount;
   document.getElementById("price").innerHTML = finalPrice.toFixed(2) + "€";
   document.getElementById("carriage").innerHTML = numberCarriage;
-  document.getElementById("cp-code").innerHTML = "17458";
+  document.getElementById("cp-code").innerHTML = bookingCode;
 }
 
 const btnReset = document.getElementById("btn-reset");
 btnReset.addEventListener("click", function() {
   document.querySelector("#name-input").value = "";
   document.querySelector("#km-input").value = "";
-  // document.querySelector("#age-input").value = "";
   document.getElementById("type-discount").innerHTML = "-"
   document.getElementById("price").innerHTML = "-";
   document.getElementById("carriage").innerHTML = "-";
