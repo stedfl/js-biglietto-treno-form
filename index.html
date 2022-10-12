@@ -10,7 +10,7 @@
 </head>
 <body>
   <main class="d-flex align-items-center justify-content-center">
-    <div class="sd-container text-center">
+    <div class="sd-container text-center bg-info py-5">
       <h2 class="text-uppercase text-white fw-bold">calcola il prezzo del tuo biglietto</h2>
       <div class="box-card">
         <div class="card-top bg-white w-100 py-4 rounded-3">
@@ -40,16 +40,30 @@
         <h2 class="text-uppercase text-white fw-bold mt-3">il tuo biglietto</h2>
         <div class="card-bottom bg-white w-100 p-4 fw-bold">
           <h3 class="text-uppercase text-start">Dettaglio passeggeri</h3>
-          <div class="details-row d-flex border-1">
+          <div class="details-row d-flex border border-2 border-dark">
             <div class="left-col w-25 bg-success">
               <h3 class="text-uppercase">nome passeggero</h3>
               <p class="name"></p>
             </div>
-            <div class="right-col w-75">
-              
+            <div class="right-col w-75 d-flex justify-content-around">
+              <div class="discount">
+                <h5>Offerta</h5>
+                <p id="type-discount"></p>
+              </div>
+              <div class="discount">
+                <h5>Carrozza</h5>
+                <p id="chart"></p>
+              </div>
+              <div class="booking-code">
+                <h5>Codice CP</h5>
+                <p id="cp-code"></p>
+              </div>
+              <div class="price-ticket">
+                <h5>Costo Biglietto</h5>
+                <p id="price"></p>
+              </div>
             </div>
           </div>
-
 
       
         </div>
