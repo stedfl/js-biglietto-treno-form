@@ -17,22 +17,22 @@
           <div class="row-form d-flex justify-content-around mb-5">
             <div class="name-input">
               <h4>Nome e Cognome</h4>
-              <input type="text">
+              <input id="name-input" type="text" placeholder="Nome Cognome" value="">
             </div>
             <div class="distance-input">
               <h4>Km da percorrere</h4>
-              <input type="text">
+              <input id="km-input" type="text" placeholder="Numero chilometri" value="">
             </div>
             <div class="age-range">
               <h4>Età</h4>
-              <input type="text">
+              <input id="age-input" type="text" placeholder="anni" value="">
             </div>    
           </div>
           <div class="row-button">
-            <button>
+            <button id="btn-input">
               Genera
             </button>
-            <button>
+            <button id="btn-reset">
               Annulla
             </button>
           </div>
@@ -43,7 +43,7 @@
           <div class="details-row d-flex border border-2 border-dark">
             <div class="left-col w-25 bg-success">
               <h3 class="text-uppercase">nome passeggero</h3>
-              <p class="name"></p>
+              <p id="output-name"></p>
             </div>
             <div class="right-col w-75 d-flex justify-content-around">
               <div class="discount">
