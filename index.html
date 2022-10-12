@@ -17,15 +17,15 @@
           <div class="row-form d-flex justify-content-around mb-5">
             <div class="name-input">
               <h4>Nome e Cognome</h4>
-              <input class="reset-input" id="name-input" type="text" placeholder="Nome Cognome" value="" >
+              <input class="reset-input text-center border border-primary rounded-2" id="name-input" type="text" placeholder="Nome Cognome" value="" >
             </div>
             <div class="distance-input">
               <h4>Km da percorrere</h4>
-              <input class="reset-input" id="km-input" type="text" placeholder="Numero chilometri" value="">
+              <input class="reset-input text-center border border-primary rounded-2" id="km-input" type="text" placeholder="Numero chilometri" value="">
             </div>
             <div class="age-range">
               <h4>Fascia di età</h4>
-              <select id="framework">
+              <select class="text-center bg-white border border-primary rounded-2" id="framework">
                 <option
                 value="">Seleziona Fascia</option>
                 <option id="standard-age"
@@ -36,38 +36,38 @@
             </div>    
           </div>
           <div class="row-button">
-            <button id="btn-input">
+            <button class="border-2 border-primary rounded-1 mx-2 px-3" id="btn-input">
               Genera
             </button>
-            <button id="btn-reset">
+            <button class="border-2 border-primary rounded-1 mx-2 px-3" id="btn-reset">
               Annulla
             </button>
           </div>
         </div>
         <h2 class="text-uppercase text-white fw-bold mt-3">il tuo biglietto</h2>
         <div class="card-bottom bg-white w-100 p-4 fw-bold">
-          <h3 class="text-uppercase text-start">Dettaglio passeggeri</h3>
-          <div class="details-row d-flex border border-2 border-dark">
-            <div class="left-col w-25 bg-success">
-              <h3 class="text-uppercase">nome passeggero</h3>
-              <p id="output-name"></p>
+          <h3 class="text-uppercase text-start fw-bold">Dettaglio passeggeri</h3>
+          <div class="details-row d-flex border border-2 border-primary rounded-2">
+            <div class="left-col  p-2">
+              <h3 class="text-uppercase fw-bold">nome passeggero</h3>
+              <p id="output-name">-</p>
             </div>
-            <div class="right-col w-75 d-flex justify-content-around">
+            <div class="right-col d-flex justify-content-around py-2">
               <div class="discount">
                 <h5>Offerta</h5>
-                <p id="type-discount"></p>
+                <p id="type-discount">-</p>
               </div>
               <div class="discount">
                 <h5>Carrozza</h5>
-                <p id="carriage"></p>
+                <p id="carriage">-</p>
               </div>
               <div class="booking-code">
                 <h5>Codice CP</h5>
-                <p id="cp-code"></p>
+                <p id="cp-code">-</p>
               </div>
               <div class="price-ticket">
                 <h5>Costo Biglietto</h5>
-                <p id="price"></p>
+                <p id="price">-</p>
               </div>
             </div>
           </div>

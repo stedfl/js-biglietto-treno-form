@@ -11,3 +11,33 @@ main {
   margin: 0 auto;
 }
 
+.details-row .left-col {
+  background-color: lightblue;
+  width: 30%;
+}
+
+.details-row .right-col {
+  width: 70%;
+}
+
+
+.details-row p {
+  font-size: 1rem ;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+button {
+  background-color:  lightblue;
+  
+}
