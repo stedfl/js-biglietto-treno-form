@@ -26,30 +26,19 @@ function ticketParameters() {
 
   let finalPrice = totalPrice * (1 - discount);
   document.getElementById("type-discount").innerHTML = visualDiscount;
-  document.getElementById("price").innerHTML = finalPrice.toFixed(2) + "€";
   document.getElementById("carriage").innerHTML = numberCarriage;
   document.getElementById("cp-code").innerHTML = bookingCode;
+  document.getElementById("price").innerHTML = finalPrice.toFixed(2) + "€";
 }
 
 const btnReset = document.getElementById("btn-reset");
 btnReset.addEventListener("click", function() {
-  document.querySelector("#name-input").value = "";
-  document.querySelector("#km-input").value = "";
+  document.getElementById("name-input").value = "";
+  document.getElementById("km-input").value = "";
+  document.getElementById("framework").value = "standard";
+  document.getElementById('output-name').innerHTML = "-";
   document.getElementById("type-discount").innerHTML = "-"
-  document.getElementById("price").innerHTML = "-";
   document.getElementById("carriage").innerHTML = "-";
   document.getElementById("cp-code").innerHTML = "-";
-  document.getElementById('output-name').innerHTML = "-";
+  document.getElementById("price").innerHTML = "-";
 });
-
-
-
-
-
-
-
-
-
-
-
-
