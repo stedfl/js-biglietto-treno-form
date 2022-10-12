@@ -30,6 +30,15 @@ function ticketParameters() {
   document.getElementById("carriage").innerHTML = numberCarriage;
 }
 
+const btnReset = document.getElementById("btn-reset");
+btnReset.addEventListener("click", function() {
+  document.querySelector("#name-input").value = "";
+  document.querySelector("#km-input").value = "";
+  document.querySelector("#age-input").value = "";
+});
+
+
+
 
 
 
