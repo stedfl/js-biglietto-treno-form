@@ -3,7 +3,6 @@ btnInput.addEventListener("click", ticketParameters);
 
 function ticketParameters() {
   const name = document.getElementById('name-input').value;
-  document.getElementById('output-name').innerHTML = name.toUpperCase();
   let userAge = document.getElementById("framework").value;
   const userKm = document.getElementById('km-input').value;
   const priceForKm = 0.21;
@@ -25,11 +24,24 @@ function ticketParameters() {
   }
 
   let finalPrice = totalPrice * (1 - discount);
-  document.getElementById("type-discount").innerHTML = visualDiscount;
-  document.getElementById("carriage").innerHTML = numberCarriage;
-  document.getElementById("cp-code").innerHTML = bookingCode;
-  document.getElementById("price").innerHTML = finalPrice.toFixed(2) + "€";
+
+  if (isNaN(userKm) ) {
+    alert('Inserire il numero di chilometri');
+  } else if (name.match("[0-9]+")) {
+    alert('Nome e cognome non validi');
+  } else if (name =="" || userKm =="") {
+    alert('Compilare tutti i campi')
+  } else {
+    
+    document.getElementById('output-name').innerHTML = name.toUpperCase();
+    document.getElementById("type-discount").innerHTML = visualDiscount;
+    document.getElementById("carriage").innerHTML = numberCarriage;
+    document.getElementById("cp-code").innerHTML = bookingCode;
+    document.getElementById("price").innerHTML = finalPrice.toFixed(2) + "€";
+  }
 }
+
+
 
 const btnReset = document.getElementById("btn-reset");
 btnReset.addEventListener("click", function() {
