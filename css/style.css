@@ -20,9 +20,13 @@ main {
   width: 70%;
 }
 
-
 .details-row p {
   font-size: 1rem ;
+}
+
+input:focus, 
+select:focus {
+  background-color: lightblue;
 }
 
 h3 {
